@@ -14,7 +14,7 @@ public class Player : MonoBehaviour, IDamagable
     public LayerMask enemyMask;
 
     [Header("Hit Effect")] 
-    [SerializeField] private HitEffect _hitEffect;
+    public GameObject hitEffect;
     private AudioSource _audioSource;
     public AudioClip[] clip;
 
@@ -39,8 +39,11 @@ public class Player : MonoBehaviour, IDamagable
 
             if (hit.collider != null)
             {
-                HitEffect();
+                HitEffect(hit);
 
+                int rand = Random.Range(0, clip.Length);
+                _audioSource.PlayOneShot(clip[rand]);
+                
                 hit.collider.GetComponent<Enemy>().UpdateHealthBar();
                 IDamagable damageDealer = hit.collider.GetComponent<IDamagable>();
                 damageDealer.TakeDamage(damage);
@@ -48,12 +51,10 @@ public class Player : MonoBehaviour, IDamagable
         }
     }
 
-    public void HitEffect()
+    public void HitEffect(RaycastHit2D col)
     {
-        _hitEffect.Invoke("SpawnEffect", 0.1f);
-
-        int rand = Random.Range(0, clip.Length);
-        _audioSource.PlayOneShot(clip[rand]);
+        GameObject effect = Instantiate(hitEffect, col.collider.transform.position, Quaternion.identity);
+        Destroy(effect, 1f);
     }
 
     public void TakeDamage(int amount)

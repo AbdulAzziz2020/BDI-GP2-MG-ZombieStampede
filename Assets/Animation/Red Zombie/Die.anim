@@ -60,6 +60,8 @@ AnimationClip:
       value: {fileID: -387361161, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
     - time: 0.28333333
       value: {fileID: 761552654, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
+    - time: 0.5
+      value: {fileID: 761552654, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -97,12 +99,13 @@ AnimationClip:
     - {fileID: -1901556309, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
     - {fileID: -387361161, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
     - {fileID: 761552654, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
+    - {fileID: 761552654, guid: 8abcb5e177a14f940ac9ca681982756f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -141,7 +144,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.3
+  - time: 0.5
     functionName: AddKill
     data: 
     objectReferenceParameter: {fileID: 0}

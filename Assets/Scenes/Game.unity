@@ -1190,7 +1190,7 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  _hitEffect: {fileID: 1476904865}
+  hitEffect: {fileID: 2562904180420641428, guid: b04865691e90bd847acff81e46f3936d, type: 3}
   clip:
   - {fileID: 8300000, guid: ae42add9cdff7da478db98c4f08215f3, type: 3}
   - {fileID: 8300000, guid: e4027d5d1d5b72b4dba47aaaf04638b8, type: 3}
@@ -1583,7 +1583,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1476904864}
   - component: {fileID: 1476904863}
-  - component: {fileID: 1476904865}
   m_Layer: 0
   m_Name: crosshair
   m_TagString: Untagged
@@ -1658,19 +1657,6 @@ Transform:
   m_Father: {fileID: 1438661687}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1476904865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476904862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44276c4d68ec824890ada92a11372f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitEffect: {fileID: 2562904180420641428, guid: b04865691e90bd847acff81e46f3936d, type: 3}
 --- !u!1 &1554975425
 GameObject:
   m_ObjectHideFlags: 0
