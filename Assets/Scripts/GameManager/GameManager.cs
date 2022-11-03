@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreInGame, scoreInPanel;
     public Image healthBar;
     public Button buttonRestart;
-    public GameObject GameOverPanel, crossHair;
+    public GameObject GameOverPanel;
 
     public void Start()
     {
@@ -42,40 +42,9 @@ public class GameManager : MonoBehaviour
         scoreInPanel.text = $"Your Score {DataCounter.score}";
     }
     
-    private void OnEnable()
-    {
-        buttonRestart.onClick.AddListener(() =>
-        {
-            SceneManager.LoadScene("Game");
-            DataCounter.score = 0;
-        });
-    }
-
-    private void OnDisable()
-    {
-        buttonRestart.onClick.RemoveListener(() =>
-        {
-            SceneManager.LoadScene("Game");
-            DataCounter.score = 0;
-        });
-    }
-#if UNITY_STANDALONE
-    private void Update()
-    {
-        PointerUtility();
-    }
-#endif
 
     public void UpdateHealthBar(int baseHealth, int curHealth)
     {
         healthBar.fillAmount = (float)curHealth / (float)baseHealth;
-    }
-
-    public void PointerUtility()
-    {
-        Cursor.visible = false;
-        crossHair.SetActive(true);
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        crossHair.transform.position = mousePosition;
     }
 }

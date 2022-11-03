@@ -8,9 +8,11 @@ public class SceneManagement : MonoBehaviour
 {
     public Animator anim;
     public float transitionDelay;
+    public GameObject crossHair;
     
     public void LoadScene(string sceneName)
-    {
+    { 
+        DataCounter.score = 0;
         StartCoroutine(Transition());
 
         IEnumerator Transition()
@@ -21,5 +23,20 @@ public class SceneManagement : MonoBehaviour
             
             SceneManager.LoadScene(sceneName);
         }
+    }
+    
+#if UNITY_STANDALONE
+    private void Update()
+    {
+        PointerUtility();
+    }
+#endif
+    
+    public void PointerUtility()
+    {
+        Cursor.visible = GameManager.Instance.isGameOver ? true : false;
+        crossHair.SetActive(GameManager.Instance.isGameOver ? false : true);
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        crossHair.transform.position = mousePosition;
     }
 }
