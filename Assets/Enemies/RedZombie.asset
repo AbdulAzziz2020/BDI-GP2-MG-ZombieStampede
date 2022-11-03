@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b617f9aaad394b94a9c417dc45e8e274, type: 3}
+  m_Name: RedZombie
+  m_EditorClassIdentifier: 
+  baseHealth: 100
+  baseSpeed: 0.3
+  damage: 10
+  enemyPrefab: {fileID: 5432556318022382879, guid: b1247777eb7087244810176346d0816f, type: 3}
+  clip:
+  - {fileID: 8300000, guid: 6b522c335713cac43b8f361b4cbd0006, type: 3}
+  - {fileID: 8300000, guid: 9b54c4524b1fe1e4aba0f17813bdef9b, type: 3}
+  - {fileID: 8300000, guid: fef7cd9ae7a005348b4c7dd7e16346e6, type: 3}
+  - {fileID: 8300000, guid: 011ca080d55d5684aa06e3b696c5cb25, type: 3}
+  - {fileID: 8300000, guid: 12ac0d1697202ff48bef249f1a6a4e91, type: 3}
+  - {fileID: 8300000, guid: bb74da606d920b748909f5ed9acc195b, type: 3}
+  - {fileID: 8300000, guid: 4add12b2ccc91c742b10993d00932b5e, type: 3}
+  - {fileID: 8300000, guid: dbdcf71551b5a6848af8bc317c93b666, type: 3}
+  - {fileID: 8300000, guid: e29602fe7fb1c424b865d1287194eaef, type: 3}
+  - {fileID: 8300000, guid: f173ab0f4460af7498dc962eadb4b4f9, type: 3}
+  - {fileID: 8300000, guid: 650a7f9163dfe524d9bb0aa059d9eda2, type: 3}
+  - {fileID: 8300000, guid: 874e047377fd4d947915fe4300b4d022, type: 3}
+  - {fileID: 8300000, guid: 4cceefa106c50404d82b3fc24c5fefb6, type: 3}
+  - {fileID: 8300000, guid: 1629cc92ca5e66a409a300d5b83ec03f, type: 3}
+  - {fileID: 8300000, guid: 85afda443631c7b4c8e0bbeb73ec9a13, type: 3}
+  - {fileID: 8300000, guid: 78a8909a4d471634d8331acd1fa2d04a, type: 3}
+  - {fileID: 8300000, guid: 9c6db555348a77a4e8a61a750a31ce52, type: 3}
+  - {fileID: 8300000, guid: 364f2fad62e221445a4ef0dd7c17de07, type: 3}
+  - {fileID: 8300000, guid: 527c0aafce312fa43b4037478338d132, type: 3}
+  - {fileID: 8300000, guid: eef0ff3b7be02574d9b8793669fcf9ce, type: 3}
+  - {fileID: 8300000, guid: cc68ae44badb44144bf8c711f8ab928a, type: 3}
+  - {fileID: 8300000, guid: 11a3efb8c45bee249a74488f3691ab42, type: 3}
+  - {fileID: 8300000, guid: 07dc4e3bbf024c449b07d4225d3fa277, type: 3}
+  - {fileID: 8300000, guid: 7224b7ccabffcea48b6c2a85c5ee2a24, type: 3}
